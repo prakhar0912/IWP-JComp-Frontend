@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Movie Booking</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="okay" style="z-index: 11; color: white">Prastik</div>
+        <div class="next" style="z-index: 11; color: white">NEXT</div>
+        <div class="prev" style="z-index: 11; color: white">PREV</div>
+        <div class="reg" style="z-index: 11; color: white; top: 10px; right: 10px; position: absolute; cursor: pointer;" onclick="window.open('./user/reg.html')">Register</div>
+        <div class="scrolldf">Scroll through the page!</div>
+    </div>
+    <div class="box">
+        <img src="./img/backgrounda.png" alt="" class="l12">
+        <img src="./img/ticket-buy.jpg" alt="" srcset="" class='l8'>
+        <a class="l7" href="./call/gc.html">Check price, tickets, and more!</a>
+        <div class="l6"></div>
+        <img src="./img/reel-popcorn.jpg" alt="" srcset="" class='l5'>
+        <div class="l4">
+            <a href="./live/avail.html">Look for available movies</a>
+            <p>or</p>
+            <a href="./live/bookstat.html">Check booking status</a>
+        </div>
+        <img src="./img/inside-theater.jpg" alt="" class="l2">
+        <div class="l1">
+            Welcome to Prastik Movie Booking!
+            <div class="typewrite" data-period="1000" data-type='[ "Book movies online!", "Check seats instantly!"]'>
+                Book now! Login to continue.
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./vh.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./type.js"></script>
+</body>
+
+</html>

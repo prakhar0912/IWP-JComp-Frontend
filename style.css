@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transform-style: preserve-3d;
+    will-change: transform;
+    perspective: 3500px;
+    overflow: hidden;
+}
+
+html {
+    font-size: 16px;
+}
+
+.box {
+    margin: 0;
+    height: 99%;
+    width: 100vw;
+    position: absolute;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.nav {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav>div {
+    font-size: 1.5rem;
+    z-index: 10!important;
+    color: white;
+}
+
+.slinger {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.web {
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    transform: rotate(-90deg);
+}
+
+.okay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.next {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2.0rem!important;
+    z-index: 9999;
+}
+
+.prev {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 2.0rem!important;
+    z-index: 9999;
+}
+
+
+/* 
+.logo1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+} */
+
+.logo2 {
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    transform: rotate(90deg);
+}
+
+.typewrite {
+    text-align: left;
+    font-style: italic;
+    font-size: 0.3rem!important;
+    color: white;
+}
+
+
+/* .in_nav{
+    position: absolute;
+    top: 55vh;
+    left: 0;
+    z-index: 999;
+    background: transparent;
+    width: 4vw;
+    transform: translateY(-50%);
+} */
+
+.scrolldf {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 1.5rem;
+    z-index: 99999;
+    transform: translateX(-50%);
+    animation: breathe infinite 1.7s;
+}
+
+.box>div,
+.box>a {
+    color: yellow;
+}
+
+.l1 {
+    position: absolute;
+    font-size: 1vw;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-60%, -50%, 2500px);
+    text-align: left;
+}
+
+.l2 {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 37%;
+    width: 32vw;
+    transform: translate3d(-50%, -50%, 2000px) rotateY(10deg) rotateX(40deg);
+}
+
+.l4 {
+    position: absolute;
+    color: white;
+    font-size: 0.2rem;
+    top: 50vh;
+        left: 50vw;
+    transform: translate3d(-60%, -50%, 1700px);
+    text-align: center;
+}
+
+.l4>a {
+    text-decoration: none;
+    color: black;
+}
+
+.l4>p {
+    padding: 1px 0;
+    color: black;
+}
+
+.l5 {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 11vh;
+    width: 10vw;
+    transform: translate3d(-50%, -50%, 1500px) rotateY(-10deg) rotateX(25deg);
+}
+
+.l6 {
+    position: absolute;
+    font-size: 0.4rem;
+    font-style: italic;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-50%, -50%, 1400px);
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.l7 {
+    text-decoration: none;
+    position: absolute;
+    color: white;
+    font-size: 0.2rem;
+    top: 50vh;
+    left: 50.5vw;
+    transform: translate3d(-60%, -50%, 1200px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.l8 {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 11vh;
+    width: 8vw;
+    transform: translate3d(-50%, -50%, 1000px) rotateY(-10deg) rotateX(25deg);
+}
+
+.l10 {
+    position: absolute;
+    font-size: 0.3rem;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-60%, -50%, 800px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.l11 {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 11vh;
+    width: 10vw;
+    transform: translate3d(-50%, -50%, 600px) rotateY(-10deg) rotateX(25deg);
+}
+
+.l12 {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-50%, -50%, 00px);
+}
+
+@media (max-width: 800px) {
+    .nav>div {
+        font-size: 1rem;
+    }
+    body,
+    .nav {
+        height: calc(var(--vh, 1vh)*99);
+        /* max-height: calc(var(--vh, 1vh)*99); */
+    }
+    .l1,
+    .l2,
+    .l3,
+    .l4,
+    .l5,
+    .l6,
+    .l7,
+    .l8,
+    .l12 {
+        top: calc(var(--vh, 1vh) * 50);
+    }
+    .next {
+        font-size: 1.3rem!important;
+        bottom: 0px;
+    }
+    .prev {
+        font-size: 1.3rem!important;
+        bottom: 0px;
+    }
+    .typewrite>span {
+        font-size: 0.2rem!important;
+    }
+    .l2 {
+        height: 20vh;
+        width: 37vw;
+    }
+    .l4 {
+        font-size: 0.1rem;
+    }
+    .l7 {
+        font-size: 0.2rem;
+    }
+    .l5,
+    .l8 {
+        height: 5vh;
+        width: 13vw;
+    }
+    .scrolldf {
+        font-size: 0.7rem;
+        animation: breatheM infinite 1.7s;
+        bottom: 10px;
+    }
+    .l1 {
+        font-size: 0.4rem;
+        left: 50vw;
+        font-weight: 500;
+    }
+}
+
+@keyframes breatheM {
+    0% {
+        font-size: 0.7rem;
+    }
+    50% {
+        font-size: 0.8rem;
+    }
+    100% {
+        font-size: 0.7rem;
+    }
+}
+
+@keyframes breathe {
+    0% {
+        font-size: 1rem;
+    }
+    50% {
+        font-size: 1.2rem;
+    }
+    100% {
+        font-size: 1rem;
+    }
+}
